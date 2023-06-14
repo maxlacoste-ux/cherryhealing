@@ -1,0 +1,273 @@
+html{
+  min-height:100%;/* make sure it is at least as tall as the viewport */
+  position:relative;
+}
+
+body {
+  font-family: 'Lora', Times, serif;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: #222;
+  background-color: #FFF;
+  overflow-x: hidden;
+  height:100%; /* force the BODY element to match the height of the HTML element */
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  display: none;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  line-height: 1.2em;
+  margin: 0 0 1em;
+  color: #7B0D18;
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  line-height: 1.2em;
+  color: #FFFFFF;
+  margin: 0.5em 0;
+}
+
+h4 {
+  font-size: 1.3rem;
+  line-height: 1.2em;
+  color: #0E4471;
+  margin: 1em 0;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.25em;
+  letter-spacing: 0.15em;
+  color: #05A6B7;
+}
+
+p {
+  display: inline-block;
+  line-height: 1.6em;
+  letter-spacing: 0.05em;
+  padding: 1em 0;
+}
+
+sup {
+  font-size: 0.55em;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+
+  text-decoration: none;
+}
+
+/* Custom default button */
+.btn {
+  padding: 12px 24px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 1.4em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background: #FFD3C2;
+  border: solid 2px #FFD3C2;
+  color: #7B0D18;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background: #7B0D18;
+  border: solid 2px #7B0D18;
+  color: #FFD3C2;
+}
+
+.btn-secondary {
+  background: none;
+  border: solid 2px #7B0D18;
+  color: #7B0D18;
+}
+
+
+/* Template */
+section {
+  padding: 80px 0;
+}
+
+.banner {
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/background.webp');
+  background-size: cover;
+  background-position: center center;
+}
+
+.logo {
+  height: 300px;
+  width: auto;
+}
+
+.intro,
+.acknowledgement {
+  max-width: 640px;
+}
+
+.about .portrait {
+  height: 400px;
+  overflow: hidden;
+  background: url('../img/portrait.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.values {
+  background-color: #FFD3C2;
+}
+.values img {
+  max-width: 200px;
+  height: auto;
+  margin: 1em 0;
+}
+
+.services img {
+  width: 100%;
+  height: auto;
+}
+.services p {
+  margin-bottom: 0;
+}
+.services ul {
+  margin-bottom: 2em;
+  text-align: left;
+}
+
+.voucher img {
+  width: 100%;
+  height: auto;
+}
+.voucher h2 {
+  margin: 0 0 0.25em;
+}
+
+.contact {
+  background-color: #FFD3C2;
+  padding-bottom: 24px;
+}
+.contact .btn {
+  margin-bottom: 1em;
+}
+.contact .btn-primary {
+  background: #7B0D18;
+  border: solid 2px #7B0D18;
+  color: #FFD3C2;
+}
+.contact .btn-primary:hover,
+.contact .btn-primary:focus,
+.contact .btn-secondary:hover,
+.contact .btn-secondary:focus {
+  background: #FFFFFF;
+  border: solid 2px #FFFFFF;
+  color: #7B0D18;
+}
+.contact i {
+  margin-right: 8px;
+}
+
+.acknowledgement p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  background-color: #FFD3C2;
+}
+.footer h2 {
+  margin-bottom: 0.5em;
+}
+.footer .btn {
+  margin: 0 8px;
+  padding: 16px;
+  letter-spacing: 0;
+  background: #FFD3C2;
+  border: none;
+  color: #7B0D18;
+}
+.footer .btn:hover,
+.footer .btn:focus,
+.footer .btn:hover,
+.footer .btn:focus {
+  background: #FFFFFF;
+  color: #7B0D18;
+}
+
+.copyright {
+  background-color: #ffebe4;
+  padding: 8px 0;
+  color: #666666;
+}
+
+.floating {
+  position: fixed;
+  z-index: 10;
+  right: 24px;
+  bottom: 24px;
+}
+.floating .btn {
+  display: block;
+  padding: 16px 16px 14px;
+  letter-spacing: 0;
+  background: #FFD3C2;
+  border: none;
+  color: #7B0D18;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.floating .btn:hover,
+.floating .btn:focus {
+  background: #7B0D18;
+  color: #FFD3C2;
+}
+
+
+
+/* Responsiveness */
+@media (min-width: 460px) {
+  .about .portrait {
+    height: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about .portrait {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about .portrait {
+    height: 750px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .gmap iframe {
+    height: 500px;
+  }
+}
