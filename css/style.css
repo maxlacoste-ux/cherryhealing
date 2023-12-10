@@ -108,6 +108,62 @@ a:focus {
 }
 
 
+/* Custom accordion */
+.accordion {
+  background-color: none;
+  margin-top: 64px;
+}
+
+.accordion-item {
+  background-color: #FFD3C2;
+  border-radius: 80px !important;
+  border: none !important;
+  margin-bottom: 1em;
+}
+
+.accordion-button {
+  background-color: #FFD3C2 !important;
+  height: 160px;
+  border-radius: 80px !important;
+  box-shadow: none !important;
+  font-size: 1.25rem;
+  line-height: 1.25em;
+  letter-spacing: 0.15em;
+  color: #05A6B7 !important;
+}
+
+.accordion-button.collapsed {
+  background-color: #FFE7DF !important;
+}
+
+.accordion-button:focus {
+  border: none !important;
+}
+
+.accordion-item img {
+  height: 128px;
+  width: auto;
+  margin-right: 1em;
+}
+
+.accordion-button::after {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 24px;
+  background-color: #FFFFFF !important;
+  background-position: center center;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>') !important;
+}
+
+.accordion-body {
+  padding: 0 2em;
+}
+.accordion-body p {
+  padding-top: 0;
+}
+
+
+
 /* Template */
 section {
   padding: 80px 0;
@@ -169,7 +225,7 @@ section {
 
 .contact {
   background-color: #FFD3C2;
-  padding-bottom: 24px;
+  /*padding-bottom: 24px;*/
 }
 .contact .btn {
   margin-bottom: 1em;
@@ -252,17 +308,32 @@ section {
   .about .portrait {
     height: 480px;
   }
+  .accordion-button {
+    padding: 32px !important;
+  }
 }
 
 @media (min-width: 768px) {
   .about .portrait {
-    height: 600px;
+    height: 500px;
+  }
+  .accordion-button {
+    padding: 48px !important;
+  }
+  .accordion-item img {
+    margin-right: 1.5em;
   }
 }
 
 @media (min-width: 1200px) {
   .about .portrait {
-    height: 750px;
+    height: 640px;
+  }
+  .accordion-button {
+    padding: 64px !important;
+  }
+  .accordion-item img {
+    margin-right: 2em;
   }
 }
 
